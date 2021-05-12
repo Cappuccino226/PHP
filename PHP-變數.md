@@ -61,9 +61,9 @@ session_encode：資料編碼，編碼成功回傳 true。
 
 https://www.webtech.tw/info.php?tid=33
 ```
-```
 
-# PHP Session 使用範例說明
+
+### PHP Session 使用範例說明
 ```
 PHP Session 使用範例說明
 https://www.wibibi.com/info.php?tid=135
