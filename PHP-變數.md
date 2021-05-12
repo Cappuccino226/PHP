@@ -14,7 +14,6 @@ https://www.php.net/manual/zh/reserved.variables.post.php
 
 $_POST -- $HTTP_POST_VARS [已棄用] — HTTP POST變量
 
-
 說明：$HTTP_POST_VARS包含相同的信息，但它不是一個超全局變量。(注意$HTTP_POST_VARS和$_POST是不同的變量，PHP處理它們的方式不同)
 ```
 
