@@ -32,7 +32,7 @@
 
 </html>
 
-說明上述程式stripslashes()與addslashes()
+### 說明上述程式stripslashes()與addslashes()
 
 ### addslashes()
 ```
