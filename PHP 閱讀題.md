@@ -37,15 +37,18 @@
 select * from tb_book where bookname = 'PHP5從入門到放棄'
 select * from tb_book where bookname = \'PHP5從入門到放棄\'
 select * from tb_book where bookname = 'PHP5從入門到放棄'
-addslashes()
-https://www.webtech.tw/info.php?tid=PHP_addslashes_%E5%87%BD%E6%95%B8%E6%9B%BF%E5%AD%97%E7%AC%A6%E5%A2%9E%E5%8A%A0%E6%96%9C%E7%B7%9A
-https://www.php.net/manual/en/function.addslashes.php
+### addslashes()
+```
+https://www.w3school.com.cn/php/func_string_addslashes.asp
+```
 
-stripslashes()
+### stripslashes()
+```
 https://www.webtech.tw/info.php?tid=PHP_stripslashes_%E5%87%BD%E6%95%B8
 https://www.php.net/manual/en/function.stripslashes.php
 addslashes ( string $string ) : string
 功能是替字串的特殊字符增加反斜線效果
+```
 
 特殊字符是：
 單引號(')
