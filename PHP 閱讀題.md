@@ -33,35 +33,37 @@
 </html>
 
 說明上述程式stripslashes()與addslashes()
-執行結果:
-select * from tb_book where bookname = 'PHP5從入門到放棄'
-select * from tb_book where bookname = \'PHP5從入門到放棄\'
-select * from tb_book where bookname = 'PHP5從入門到放棄'
+
 ### addslashes()
 ```
-https://www.w3school.com.cn/php/func_string_addslashes.asp
-```
+該函數可用於為存儲在數據庫中的字符串以及數據庫查詢語句準備合適的字符串。
 
-### stripslashes()
-```
-https://www.webtech.tw/info.php?tid=PHP_stripslashes_%E5%87%BD%E6%95%B8
-https://www.php.net/manual/en/function.stripslashes.php
-addslashes ( string $string ) : string
-功能是替字串的特殊字符增加反斜線效果
-```
+https://www.w3school.com.cn/php/func_string_addslashes.asp
+https://sites.google.com/site/phplearnmark/php/php-zhi-ling-qing-dan/zi-chuan-han-shi/php-addslashes
 
 特殊字符是：
 單引號(')
 雙引號(")
 反斜杠(\)
 NULL
+```
 
-有這樣的需求主要在於部份的特殊符號可能會造成資料庫的錯誤或資料被竊取，所謂的 sql 這種攻擊手法就會用一些特殊符號來偷撈資料
-所以一般會用 PHP addslashes 函數來協助避免，讓特殊符號跳脫掉，等於是失效
-與 addslashes 函數相對的是用來移除反斜線的 stripslashes 函數。
+### stripslashes()
+```
+https://sites.google.com/site/phplearnmark/php/php-zhi-ling-qing-dan/zi-chuan-han-shi/php-stripslashes
+
+stripslashes()函數刪除由addslashes()函數添加的反斜杠。
+該函數可用於清理從數據庫中或者從HTML表單中取回的數據。
+
+String stripslashes( $string )
+將要轉換的字串 $string 放入 stripslashes 函式的小括號內進行轉換，並返回轉換結果，如果字串 $string 內不含任何反斜線，則反回結果與原本的字串 $string 相同，也就是說 stripslashes 函式並不會改變原始字串的內容。
+```
 
 
-stripslashes ( string $string ) : string
-功能是用來去除字串中多餘的反斜線（\）
-1.過濾網頁上的資料
-2.用來還原 addslashes 函數處理的字串
+### stripslashes ( string $string ) : string
+```
+https://www.php.net/manual/en/function.stripslashes.php
+
+定義和用法
+stripslashes()函數刪除由addslashes()函數添加的反斜杠。
+```
