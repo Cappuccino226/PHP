@@ -32,7 +32,7 @@
 
 </html>
 
-### 說明上述程式stripslashes()與addslashes()
+說明上述程式stripslashes()與addslashes()
 執行結果:
 select * from tb_book where bookname = 'PHP5從入門到放棄'
 select * from tb_book where bookname = \'PHP5從入門到放棄\'
